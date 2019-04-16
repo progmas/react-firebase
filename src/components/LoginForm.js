@@ -21,6 +21,8 @@ class LoginForm extends Component{
     }
 
     onLoginFail(){
+        console.log("Login failed")
+        debugger;
         this.setState({
             error: 'Giriş bilgileri hatalı',
             loading: false
@@ -28,6 +30,8 @@ class LoginForm extends Component{
     }
 
     onLoginSuccess(){
+        console.log("Login başarılı");
+        debugger;
         this.setState({
             email: '',
             password: '',
